@@ -1,4 +1,5 @@
 package HTTP::Headers::UserAgent;
+# ABSTRACT: identify browser by parsing User-Agent string (deprecated)
 
 use strict;
 use warnings;
