@@ -230,6 +230,34 @@ sub GetPlatform {
 
 =back
 
+=head1 SEE ALSO
+
+I have written a L<review|http://neilb.org/reviews/user-agent.html> of all CPAN modules for parsing the User-Agent string.
+If you have a specific need, it may be worth reading the review, to find
+the best match.
+
+In brief though, I would recommend you start off with one of the following
+modules:
+
+=over
+
+=item HTML::ParseBrowser
+
+Has best overall coverage of different browsers and other user agents.
+
+=item HTTP::UserAgentString::Parser
+
+Also has good coverage, but is much faster than the other modules,
+so if performance is important as well, you might prefer this module.
+
+=item HTTP::BrowserDetect
+
+Poorest coverage of the three modules listed here, and doesn't do well at
+recognising version numbers. It's the best module for detecting whether
+a given agent is a robot/crawler though.
+
+=back
+
 =head1 AUTHOR
 
 This module is now maintained by Neil Bowers <neilb@cpan.org>.
@@ -245,37 +273,6 @@ permission of the original author, Terry Weissman <terry@mozilla.org>.
 Copyright (c) 2001 Ivan Kohler.  All rights reserved.
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
-
-=head1 SEE ALSO
-
-I have done a review of all CPAN modules for parsing the User-Agent string.
-If you have a specific need, it may be worth reading the review, to find
-the best match:
-
-http://blogs.perl.org/users/neilb/2011/10/cpan-modules-for-parsing-user-agent-strings.html
-
-In brief though, I would recommend you start off with one of the following
-modules:
-
-=over
-
-=item Parse::HTTP::UserAgent
-
-Has best overall coverage of different browsers and other user agents.
-
-=item HTTP::DetectUserAgent
-
-Not as good coverage, but handles modern browsers well, and is the
-fastest module, so if you're processing large logfiles, this might
-be the best choice.
-
-=item HTTP::BrowserDetect
-
-Poorest coverage of the three modules listed here, and doesn't do well at
-recognising version numbers. It's the best module for detecting whether
-a given agent is a robot/crawler though.
-
-=back
 
 =cut
 
