@@ -1,5 +1,9 @@
 Revision history for Perl module HTTP::Headers::UserAgent.
 
+3.04 2013-11-17
+
+    - added [GithubMeta] to dist.ini so github repo will appear in metadata
+
 3.03 2013-08-15
 
     - The doc was mistakenly saying that HTTP::BrowserDetect had been
