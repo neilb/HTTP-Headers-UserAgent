@@ -1,4 +1,8 @@
-Revision history for Perl module HTTP::Headers::UserAgent.
+Revision history for Perl module HTTP::Headers::UserAgent
+
+3.05 2014-01-27
+
+    - specified min perl version 5.6.0
 
 3.04 2013-11-17
 
