@@ -1,5 +1,9 @@
 Revision history for Perl module HTTP::Headers::UserAgent
 
+3.06 2015-01-08
+
+    - Added x_deprecated to the dist's metadata.
+
 3.05 2014-01-27
 
     - specified min perl version 5.6.0
