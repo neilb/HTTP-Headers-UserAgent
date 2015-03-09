@@ -26,6 +26,7 @@ my %old = (
   win95   => 'Win95',
   win98   => 'Win98',
   winnt   => 'WinNT',
+  winme   => 'WinME',
   win32   => undef,
   os2     => 'OS2',
   unknown => undef,
@@ -81,7 +82,7 @@ string as a parameter.
 sub new {
   my $proto = shift;
   my $class = ref($proto) || $proto;
-  my $self = { 'bd' => new HTTP::BrowserDetect(shift) };
+  my $self = { 'bd' => HTTP::BrowserDetect->new(shift) };
   bless( $self, $class);
 }
 
@@ -225,7 +226,7 @@ returned undef.
 
 sub GetPlatform {
   my $string = shift;
-  my $object = new HTTP::Headers::UserAgent $string;
+  my $object = HTTP::Headers::UserAgent->new($string);
   $old{ $object->os };
 }
 

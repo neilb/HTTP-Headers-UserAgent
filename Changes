@@ -1,5 +1,9 @@
 Revision history for Perl module HTTP::Headers::UserAgent
 
+3.07 2015-03-09
+    - Changes needed to get tests passing after a new version of
+      HTTP::BrowserDetect (1.77) was released by OALDERS.
+
 3.06 2015-01-08
 
     - Added x_deprecated to the dist's metadata.
