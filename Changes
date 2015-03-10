@@ -1,5 +1,10 @@
 Revision history for Perl module HTTP::Headers::UserAgent
 
+3.08 2015-03-10
+    - I should have specified min version for HTTP::BrowserDetect as 1.77,
+      since switching to work with HTTP::BrowserDetect 1.77 meant tests
+      fail with 1.76 and earlier. Thanks to SREZIC for pointing this out.
+
 3.07 2015-03-09
     - Changes needed to get tests passing after a new version of
       HTTP::BrowserDetect (1.77) was released by OALDERS.

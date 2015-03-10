@@ -8,7 +8,7 @@ use warnings;
 require Exporter;
 our @ISA    = qw(Exporter);
 
-use HTTP::BrowserDetect 1.35;
+use HTTP::BrowserDetect 1.77;
 
 use vars qw($fh);
 
