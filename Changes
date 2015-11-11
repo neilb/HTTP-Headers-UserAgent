@@ -1,5 +1,8 @@
 Revision history for Perl module HTTP::Headers::UserAgent
 
+3.09 2015-11-11 NEILB
+    - Updated github repo URL after changing my github username
+
 3.08 2015-03-10
     - I should have specified min version for HTTP::BrowserDetect as 1.77,
       since switching to work with HTTP::BrowserDetect 1.77 meant tests

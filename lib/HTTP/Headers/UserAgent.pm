@@ -260,6 +260,10 @@ a given agent is a robot/crawler though.
 
 =back
 
+=head1 REPOSITORY
+
+L<https://github.com/neilb/HTTP-Headers-UserAgent>
+
 =head1 AUTHOR
 
 This module is now maintained by Neil Bowers <neilb@cpan.org>.
